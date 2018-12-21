@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<RelativeLayout 
+        android:id="@+id/o_title"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#FF7F00"
+        >
+        
+        <ImageView 
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_button"
+            />
+        
+    	<TextView
+       	 	android:id="@+id/title"
+       	 	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_centerInParent="true"
+        	android:text="提交订单"
+        	android:textSize="20sp"
+        	android:textColor="#FFFFFF"
+        	/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/o_message"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/o_title"
+        >
+        
+        <ImageView 
+            android:id="@+id/pointorder_img"
+            android:layout_width="110dp"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY"
+            />
+        
+        <TextView 
+            android:id="@+id/pointorder_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            />
+        
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:id="@+id/o_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="500dp"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/o_message"
+        >
+         
+		<LinearLayout 
+		    android:id="@+id/point_num"
+		    android:layout_width="fill_parent"
+		    android:layout_height="30dp"
+		    android:layout_marginTop="5dp"
+		    >
+        <TextView 
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预订票数:"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            />
+        <ImageView
+            android:id="@+id/jian"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/jiannum"
+            />
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            />
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/addnum"
+            />
+        </LinearLayout>
+        
+		<LinearLayout 
+        	android:id="@+id/point_date"
+       	 	android:layout_width="fill_parent"
+			android:layout_height="30dp"
+			android:layout_marginTop="5dp"
+			android:layout_below="@+id/point_num"
+       		>
+		    <TextView
+		        android:id="@+id/starttime"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="游玩日期:"
+            	android:textSize="18sp"
+            	android:layout_marginTop="5dp"
+            	android:layout_marginLeft="5dp"
+		        />
+		    <TextView
+		        android:id="@+id/start"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+            	android:textSize="18sp"
+            	android:layout_marginTop="5dp"
+            	android:layout_marginLeft="5dp"
+		        />
+    	</LinearLayout>
+        		
+		<LinearLayout 
+		    android:id="@+id/o_phone"
+       	 	android:layout_width="fill_parent"
+			android:layout_height="30dp"
+			android:layout_marginTop="5dp"
+			android:layout_below="@+id/point_date"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+		    > 
+		    <TextView
+		        android:id="@+id/phone"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="联系方式:"
+            	android:textSize="18sp"
+            	android:gravity="center"
+            	android:layout_marginLeft="5dp"
+		        />
+		    <EditText 
+		        android:id="@+id/phoneNum"
+		        android:layout_width="200dp"
+		        android:layout_height="25dp"
+		        android:textSize="14sp"
+		        android:gravity="left|top"
+            	android:layout_marginLeft="5dp"
+            	android:hint="请输入联系方式"
+            	android:background="@null"
+		        /> 
+		</LinearLayout>
+		
+    </RelativeLayout>
+   
+    
+    <TextView 
+        android:id="@+id/o_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF7F00"
+        android:textSize="26sp"
+        android:layout_toLeftOf="@+id/o_submit"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="12dp"
+        />
+    
+    <Button 
+        android:id="@+id/o_submit"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="确认提交"
+        android:background="#FF7F00"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        />
+    
+</RelativeLayout>

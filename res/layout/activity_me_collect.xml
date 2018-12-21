@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linearlayout_collect"
+    android:background="@drawable/activity_back" >
+
+    <com.cn.travel.title.TitleLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/title"
+       />
+
+    <LinearLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+         android:background="@drawable/activity_shape"
+         android:focusable="true"
+         android:focusableInTouchMode="true">
+         
+             <SearchView
+            android:id="@+id/searchView1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+           android:paddingRight="10dp"
+           android:background="@drawable/activity_shape"
+            android:iconifiedByDefault="false"
+            android:queryHint="输入搜索内容" >
+
+        </SearchView>
+
+
+    </LinearLayout>
+     <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text=" ~~空空如也~~   "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    <com.cn.travel.tools.XListView 
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants" >
+
+   </com.cn.travel.tools.XListView>
+
+    
+
+ 
+
+</LinearLayout>

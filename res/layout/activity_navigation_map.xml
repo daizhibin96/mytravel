@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/hotel_mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <ImageView
+        android:id="@+id/hotel_myLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/map_tomylocation" />
+    
+    <ImageView
+        android:id="@+id/hotel_point"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/hotel_myLocation"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/gotopoint" />
+
+</RelativeLayout>

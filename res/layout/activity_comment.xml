@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout 
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#00B2EE"
+        >
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_button"
+            />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="评价"
+             android:textSize="20sp"
+             android:layout_centerInParent="true"
+             />
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:textSize="22sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        />
+    
+    <FrameLayout 
+        android:id="@+id/comment"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/name"
+        android:layout_margin="10dp"
+        android:focusable="true"
+		android:focusableInTouchMode="true"
+        >
+         <RelativeLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             >
+        <EditText 
+            android:id="@+id/edit_comment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/search_edittext_shape"
+            android:hint="请输入评价"
+            android:textSize="18sp"
+            android:gravity="left|top"
+            />
+        <TextView 
+            android:id="@+id/edit_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="0/150"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            />
+        </RelativeLayout>
+    </FrameLayout>
+    
+    <TextView 
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="提交"
+        android:textSize="18sp"
+        android:textColor="#FF7F00"
+        />
+    
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"  
+    >
+
+    <LinearLayout 
+        android:id="@+id/selectcity_title"
+        android:background="#00B2EE"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        >
+        <ImageView 
+            android:id="@+id/selectcity_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_button"
+            android:layout_marginTop="5dp"/>
+      	<TextView
+      	    android:id="@+id/title"
+      	    android:layout_width="wrap_content"
+      	    android:layout_height="wrap_content"
+      	    android:text="选择城市"
+      	    android:textSize="24sp"
+      	    android:layout_gravity="center"
+      	    android:layout_marginLeft="60dp"
+      	    />
+	</LinearLayout>
+    <ListView
+        android:id="@+id/selectcity_list"
+        android:layout_width="80dp"
+        android:layout_height="fill_parent" 
+        android:background="#EAEAEA"
+        android:layout_below="@+id/selectcity_title"
+        android:divider="@null"
+        android:listSelector="@drawable/listview_background"
+        />
+    <ListView 
+        android:id="@+id/city_detail"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/selectcity_title"
+        android:layout_toRightOf="@+id/selectcity_list"
+        android:divider="@null"
+        />
+</RelativeLayout>

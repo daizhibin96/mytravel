@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cn.travle"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+	 <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <application
+        android:name="com.cn.travel.activity.find.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/travellogo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.cn.travel.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="BirthdayActivity"></activity>
+       
+         <activity android:name="com.cn.travel.activity.first.SearchActivity"></activity>
+         <activity android:name="com.cn.travel.activity.first.fragmentfirsttu1Activity"></activity>
+        <activity android:name="com.cn.travel.domain.LoginActivity" ></activity>
+        <activity android:name="com.cn.travel.info.InfoActivity" ></activity>
+         <activity android:name="com.cn.travel.domain.LoginOKActivity" ></activity>
+         <activity android:name="com.cn.travel.domain.LogoutActivity" ></activity>
+         <activity android:name="com.cn.travel.activity.me.MyOrderActivity" ></activity>         
+         <activity android:name="com.cn.travel.activity.me.TicketOrderPageActivity" ></activity>
+         <activity android:name="com.cn.travel.activity.me.HotelOrderPageActivity" ></activity>
+         <activity android:name="com.cn.travel.activity.me.UnPayOrderActivity" ></activity>
+         <activity android:name="com.cn.travel.activity.me.ReportOrderActivity" ></activity>
+         <activity android:name="com.cn.travel.activity.me.AvailibleOrderActivity" ></activity>
+       <activity
+     android:name=".wxapi.WXEntryActivity"
+     android:theme="@android:style/Theme.Translucent.NoTitleBar"
+     android:configChanges="keyboardHidden|orientation|screenSize"
+     android:exported="true"
+     android:screenOrientation="portrait" />  
+        
+ <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+		
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="n9YthPNcycXTekFGthGLLPIy6wrAYd3x" />
+        
+        <meta-data
+            android:name="Mob-AppKey"
+            android:value="2850adcf56ff5" />
+        <meta-data
+            android:name="Mob-AppSecret"
+            android:value="daae4f9ca83e0a9147c3660e9bb2fa99" />
+        <activity android:name="com.cn.travel.domain.RegisterActivity"></activity>
+        <activity android:name="com.cn.travel.activity.me.CollectActivity"></activity>
+        <activity android:name="com.cn.travel.activity.me.MeActivity"></activity>
+        <activity android:name="com.cn.travel.activity.me.BrowseActivity"></activity>
+        
+         <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+         <activity android:name="com.cn.travel.activity.navigation.NavigationActivity"></activity>
+         <activity android:name="com.cn.travel.activity.navigation.MapActivity"></activity>
+         <activity android:name="com.cn.travel.activity.navigation.SelectCity"></activity>
+         <activity android:name="com.cn.travel.activity.find.NoteActivity"></activity>
+         <activity android:name="com.cn.travel.activity.navigation.Hotel"></activity>
+         <activity android:name="com.cn.travel.activity.navigation.HotelList"></activity>
+         <activity android:name="com.cn.travel.activity.navigation.Food"></activity>
+         <activity android:name="com.cn.travel.activity.first.food.FirstXiangqingActivity"></activity>
+         <activity android:name="com.cn.travel.activity.first.food.FoodListActivity"></activity>
+         <activity android:name="com.cn.travel.activity.navigation.HotelDetail"></activity>
+         <activity android:name="com.cn.travel.activity.navigation.Map"></activity>
+         <activity android:name="com.cn.travel.activity.navigation.HotelOrder"></activity>
+         <activity android:name="com.cn.travel.activity.first.fragmentfirstgonglue"></activity>
+         <activity android:name="com.cn.travel.activity.find.FindContentActivity"></activity>
+         <activity android:name="com.cn.travel.activity.navigation.EditComment"></activity>
+         <activity android:name="com.cn.travel.activity.navigation.PointList"></activity>
+         <activity android:name="com.cn.travel.activity.navigation.PointOrder"></activity>
+         <activity android:name="com.cn.travel.activity.navigation.Comments"></activity>
+         <activity android:name="com.cn.travel.activity.navigation.PointDetail"></activity>
+         <activity android:name="com.cn.travel.activity.navigation.Pay"></activity>
+         <activity android:name="com.cn.travel.activity.navigation.PointSearch"></activity>
+         <activity android:name="com.cn.travel.activity.navigation.HotelSearch"></activity>
+         <activity android:name="com.cn.travel.activity.first.HomeActivity"></activity>
+         <activity android:name="com.cn.travel.domain.FindPassActivity"></activity>
+         <activity android:name="com.cn.travel.domain.SetPassActivity"></activity>
+        
+    </application>
+
+   
+</manifest>

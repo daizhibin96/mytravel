@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+
+    <ImageView 
+        android:id="@+id/pay_qr"
+        android:layout_width="fill_parent"
+        android:layout_height="330dp"
+        android:background="@drawable/payqr"
+        />
+    
+    <LinearLayout 
+        android:id="@+id/pay_choose"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/pay_qr"
+        >
+        <RelativeLayout 
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        <Button
+            android:id="@+id/pay_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="取消"
+            android:textSize="18sp"
+            android:gravity="center"
+            />
+        </RelativeLayout>
+        <RelativeLayout 
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        <Button 
+            android:id="@+id/pay_after"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="稍后支付"
+            android:textSize="18sp"
+            android:gravity="center"
+            />
+        </RelativeLayout>
+        <RelativeLayout 
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        <Button 
+            android:id="@+id/pay_pay"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="支付完成"
+            android:textSize="18sp"
+            android:gravity="center"
+            />
+        </RelativeLayout>
+    </LinearLayout>
+    
+</RelativeLayout>

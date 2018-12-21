@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="5dp"
+        android:textColor="#1E90FF"
+        android:layout_alignParentRight="true"
+        />
+    
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#1E90FF"
+        />
+    
+    <CalendarView
+        android:id="@+id/date"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:selectedWeekBackgroundColor="#f0f0f0"
+        android:showWeekNumber="false" 
+        />
+    </RelativeLayout>
+	</FrameLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity" >
+
+     <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+     <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         >
+         <EditText
+             android:id="@+id/map_city"
+             android:layout_width="80dp"
+             android:layout_height="wrap_content"
+             />
+         <EditText
+             android:id="@+id/map_keyword"
+             android:layout_width="170dp"
+             android:layout_height="wrap_content"
+             />
+         <Button 
+             android:id="@+id/map_search"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="搜索"
+             />
+         <Button 
+             android:id="@+id/map_nearbySearch"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="周边搜索"
+             />
+     </LinearLayout>
+     
+     <ImageView
+         android:id="@+id/map_currentLocation"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_marginLeft="15dp"
+         android:layout_marginBottom="15dp"
+         android:background="@drawable/map_tomylocation"
+         />
+     <Button
+         android:id="@+id/map_busSearch"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="公交路线"
+         android:layout_above="@+id/map_nearbyspot"
+         android:layout_alignParentRight="true"
+         />
+     <Button
+         android:id="@+id/map_nearbyspot"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="周边景点"
+         android:layout_above="@+id/map_walkingButton"
+		 android:layout_alignParentRight="true"
+         />
+     <Button
+         android:id="@+id/map_walkingButton"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="步行导航"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginBottom="100dp"
+         />
+     
+</RelativeLayout>

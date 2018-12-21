@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.cn.travel.title.TitleLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >       
+
+        <Button
+            android:id="@+id/unknownButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/btn_bottom_confirm_bg"
+            android:text="关于我们" />
+        <Button
+            android:id="@+id/mlogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/unknownButton"
+            android:background="@color/btn_bottom_confirm_bg"
+            android:visibility="gone"
+            android:text="注销账号" />
+    </RelativeLayout>
+
+</LinearLayout>

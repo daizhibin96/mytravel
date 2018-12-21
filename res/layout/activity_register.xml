@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <com.cn.travel.title.TitleLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/title"
+       />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/head_portrait"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_portrait" />
+
+       
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <com.cn.travel.domain.LineEditText
+            android:id="@+id/phone_ed"
+            android:singleLine="true"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="手机号" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            
+                <com.cn.travel.domain.LineEditText
+                    android:id="@+id/edt"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                	android:layout_height="match_parent"
+                    android:hint="验证码" />
+
+                <Button
+                    android:id="@+id/validate_button"
+                    android:layout_width="90dp"
+                	android:layout_height="wrap_content"
+                	android:layout_alignParentRight="true"
+                    android:background="@color/btn_bottom_confirm_bg"
+                    android:text="获取验证码" />
+            
+        </RelativeLayout>
+
+        <com.cn.travel.domain.LineEditText
+            android:id="@+id/et_password"
+            android:singleLine="true"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:password="true"
+            android:hint="设置密码" />
+
+        <com.cn.travel.domain.LineEditText
+            android:id="@+id/et_confirmpassword"
+            android:singleLine="true"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:password="true"
+            android:hint="确定密码" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@color/btn_bottom_confirm_bg"
+            android:gravity="center"
+            android:text="注册" />
+
+        <Button
+            android:id="@+id/go_to_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@color/btn_bottom_confirm_bg"
+            android:text="有账号？登录"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>
